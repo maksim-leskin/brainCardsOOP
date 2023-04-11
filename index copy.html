@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Cards</title>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/script.js" type="module"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__container">
+      <h1 class="header__title">Brain Cards</h1>
+      <h2 class="header__subtitle">Категории</h2>
+      <button class="header__btn">Добавить категорию</button>
+    </div>
+  </header>
+
+  <section class="category section-offset">
+    <div class="container">
+      <ul class="category__list">
+        <li class="category__item">
+          <button class="category__card">
+            <span class="category__title">Семья</span>
+            <span class="category__pairs">21 карточка</span>
+          </button>
+          <button class="category__btn category__edit" aria-label="редактировать"></button>
+          <button class="category__btn category__learn" aria-label="учить"></button>
+        </li>
+
+        <li class="category__item">
+          <button class="category__card">
+            <span class="category__title">Чувства и состояние</span>
+            <span class="category__pairs">18 карточек</span>
+          </button>
+          <button class="category__btn category__edit" aria-label="редактировать"></button>
+          <button class="category__btn category__learn" aria-label="учить"></button>
+        </li>
+
+        <li class="category__item">
+          <button class="category__card">
+            <span class="category__title">Личные вещи</span>
+            <span class="category__pairs">4 карточки</span>
+          </button>
+          <button class="category__btn category__edit" aria-label="редактировать"></button>
+          <button class="category__btn category__learn" aria-label="учить"></button>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="card section-offset">
+    <div class="container card__container">
+      <button class="card__return" aria-label="вернустья к категориям"></button>
+      <button class="card__item">
+        <span class="card__content">Подсолнух</span>
+      </button>
+    </div>
+  </section>
+
+  <section class="edit section-offset">
+    <div class="container edit__container">
+      <table class="edit__table table">
+        <thead>
+          <tr>
+            <th class="table__cell">Основная</th>
+            <th class="table__cell">Второстепенная</th>
+            <th class="table__cell"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="table__cell" contenteditable>watch</td>
+            <td class="table__cell" contenteditable>часы</td>
+            <td class="table__cell">
+              <button class="table__del">x</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell" contenteditable>ticket</td>
+            <td class="table__cell" contenteditable>билет</td>
+            <td class="table__cell">
+              <button class="table__del">x</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell" contenteditable>rucksack</td>
+            <td class="table__cell" contenteditable>рюкзак</td>
+            <td class="table__cell">
+              <button class="table__del">x</button>
+            </td>
+          </tr>
+          <tr>
+            <td class="table__cell" contenteditable>glasses</td>
+            <td class="table__cell" contenteditable>очки</td>
+            <td class="table__cell">
+              <button class="table__del">x</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="edit__btn-wrapper">
+        <button class="edit__btn edit__add-row">Добавить пару</button>
+        <button class="edit__btn edit__save">Сохранить категорию</button>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
